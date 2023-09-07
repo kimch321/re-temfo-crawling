@@ -15,8 +15,6 @@ async function main() {
 
     try {
         oracledb.initOracleClient({libDir: 'C:/Java/instantclient_21_11'});
-
-        // 오라클 접속정보를 이용해서 오라클 연결객체 하나 생성
         conn = await oracledb.getConnection(dbconfig);
 
 
